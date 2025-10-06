@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ระบบส่งของ - แอดมิน</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>ระบบส่งของ - แอดมิน</h1>
+<div id="login-container">
+    <label>รหัสแอดมิน: </label>
+    <input type="password" id="admin-password">
+    <button id="login-btn">เข้าสู่ระบบ</button>
+</div>
+<div id="admin-panel" style="display:none;">
+    <button id="logout-btn">🚪 ออกจากระบบ</button>
+    <h2>จัดการพนักงานและบิล</h2>
+    <!-- แท็บสำหรับเพิ่ม/ลบ/แก้ไขบิลและพนักงาน -->
+    <div id="admin-tabs">
+        <button class="tab-btn" data-tab="add-bill">➕ เพิ่มบิล</button>
+        <button class="tab-btn" data-tab="manage-bills">✏️ แก้ไข/ลบบิล</button>
+        <button class="tab-btn" data-tab="manage-employees">👤 จัดการพนักงาน</button>
+        <button class="tab-btn" data-tab="view-data">📋 ตรวจสอบข้อมูล</button>
+    </div>
+    <div id="tab-content"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
